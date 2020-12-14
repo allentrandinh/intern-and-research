@@ -1,1 +1,8 @@
-Python code to scrap primer information from primer design result page into an Excel file
+#primer_des
+primer_des asks for a name to save the final primer information Excel file and also the location of fasta file used to design primer.
+Safari will be used to open ncbi primer design page, upload fasta, and scrap primer info. 
+
+#scrap_primer_result 
+it asks for the link of the result page in ncbi primer design.
+Primers information will be scrapped and saved in a file called "primer_info.xlsx"
+
