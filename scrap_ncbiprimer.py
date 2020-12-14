@@ -1,3 +1,5 @@
+#works for safari only
+
 file_name = input("Please enter name for xlsx file to be saved")
 
 import time
