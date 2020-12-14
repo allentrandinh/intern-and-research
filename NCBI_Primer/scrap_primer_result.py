@@ -1,45 +1,10 @@
-#works for safari only
-
-file_name = input("Please enter name for xlsx file to be saved")
-
-import time
-
-from tkinter.filedialog import askopenfilename
-filename = askopenfilename()
-
-
-import selenium
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-driver = webdriver.Safari(executable_path=r'/usr/bin/safaridriver')
-driver.get('https://www.ncbi.nlm.nih.gov/tools/primer-blast/')
-driver.maximize_window()
+primer_link = input("Copy and paste primer result link here:")
 
 import requests
-from bs4 import BeautifulSoup
-
-#select upload box
-upload_box = driver.find_element_by_name('SEQFILE')
-upload_box.send_keys(filename)
-
-get_primer = driver.find_element_by_id('b1')
-get_primer.click()
-
-while True:
-    page = requests.get(driver.current_url)
-    page.content
-    soup = BeautifulSoup(page.content, 'html.parser')
-    content = soup.get_text()
-    if "Graphical view" in content:
-        break
-    else:
-        pass
-
-primer_link = driver.current_url
-
 page = requests.get(primer_link)
 page.content
 
+from bs4 import BeautifulSoup
 soup = BeautifulSoup(page.content, 'html.parser')
 
 import string
@@ -70,8 +35,10 @@ for b in range (1,11):
 
 for number in range (0,11):
     sheet[list_2[number]] = list_1[number]
+    
+pair_info = soup.find_all(class_="prPairInfo")
 
-for i in range (0,10):
+for i in range (0,len(pair_info)):
     row_cell = []
     forward_cell = []
     reverse_cell = []
@@ -124,6 +91,13 @@ for i in range (0,10):
 
 sheet.column_dimensions['C'].width = 25
 
-file_name = file_name + ".xlsx"
+workbook.save(filename="primer_info.xlsx")
 
-workbook.save(filename=file_name)
+
+
+
+
+
+
+
+
