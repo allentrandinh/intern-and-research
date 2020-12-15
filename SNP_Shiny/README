@@ -1,0 +1,6 @@
+Exome Sequencing Data Analysis were performed on usegalaxy.eu with a series of tools: FastQC, BWA-MEM, RmDup, bcftools, SnpEff, and GEMINI.
+
+The SNP_Report contains 2 tabs:
+
+1. Raw_Data: displays original data table from Galaxy, allows searching for SNP of interested diseases.
+2. Unique_Data: displays cleaned data table (preprocessed with R) which shows disease name and number of SNPs in each severity's category. 
