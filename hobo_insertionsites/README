@@ -10,8 +10,9 @@ hobo_insert.sh
 - combines sites, generates bed and fasta files for 10bp, 20bp, and 100bps window around sites. 
 
 DNase_coverage.R 
-- draw plots showing average Dnase-Seq coverage (data from Kc cell or embryo cells) in 200bp window centered around insertion sites
+- draw plots showing average Dnase-Seq coverage (data from Kc cell or embryonic cells) in 200bp window centered around insertion sites
 - currently plotting data for W strain
+Due to storage issue, Dnase-Seq data of Kc and embryonic cells were processed in Galaxy, which is viewable via https://usegalaxy.eu/u/allendinh/h/hobo-insertion-sites 
 
 genomic_view.R
 - plot genomic regions of insertion sites.
@@ -22,6 +23,6 @@ site_vs_chromatin.R
 - counts number of insertion sites of each chromatin state of Kc cells. 
 - currently using W strain insertion information. 
 
-
+A few additional analysis were also performed via Galaxy. 
 
 
