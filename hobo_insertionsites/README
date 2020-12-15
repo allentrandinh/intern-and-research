@@ -13,4 +13,10 @@ DNase_coverage.R
 - draw plots showing average Dnase-Seq coverage (data from Kc cell or embryo cells) in 200bp window centered around insertion sites
 - currently plotting data for W strain
 
+genomic_view.R
+- plot genomic regions of insertion sites.
+- tracks including gene annotation from ensemble, insertion sites, and chromatin states (data obtained from FlyBase which was then processed and subsetted with R. This R code is not included but processed data is in data folder). 
+
+
+
 
