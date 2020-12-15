@@ -16,6 +16,11 @@ DNase_coverage.R
 genomic_view.R
 - plot genomic regions of insertion sites.
 - tracks including gene annotation from ensemble, insertion sites, and chromatin states (data obtained from FlyBase which was then processed and subsetted with R. This R code is not included but processed data is in data folder). 
+- currently plotting region for W strain
+
+site_vs_chromatin.R
+- counts number of insertion sites of each chromatin state of Kc cells. 
+- currently using W strain insertion information. 
 
 
 
