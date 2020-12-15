@@ -3,9 +3,14 @@ Inspiration paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC126605/
 PwHy element was used as a deficiency generator. If the hobo tranposase was present, H jumped (preferably locally), and cross-over happened, leading to deletion.
 2 different starting points (2 original PwHy insertion sites, both on 2R) were examined in details to find the deletion end points. Sequences were deposited into GenBank.
 
-hobo_insert.sh file
+hobo_insert.sh
 - downloads reference sequence (2R chromosome)
 - downloads original insertions sites for 2 strains. 
 - blasts deposited seqs agaisnt 2R, saves summarized table (2 files for 2 different starting points), filters alignment >80bp and save locations (2 files for 2 strains, used later for Gviz graph)
 - combines sites, generates bed and fasta files for 10bp, 20bp, and 100bps window around sites. 
+
+DNase_coverage.R 
+- draw plots showing average Dnase-Seq coverage (data from Kc cell or embryo cells) in 200bp window centered around insertion sites
+- currently plotting data for W strain
+
 
