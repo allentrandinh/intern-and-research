@@ -1,4 +1,5 @@
-Exome Sequencing Data Analysis were performed on usegalaxy.eu with a series of tools: FastQC, BWA-MEM, RmDup, bcftools, SnpEff, and GEMINI.
+Exome Sequencing Data Analysis were performed on usegalaxy.eu with a series of tools: FastQC, BWA-MEM, RmDup, bcftools, SnpEff, and GEMINI. 
+Final data were extracted from Galaxy and used for construction of an interactive report. 
 
 The SNP_Report contains 2 tabs:
 
