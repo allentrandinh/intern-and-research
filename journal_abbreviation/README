@@ -1,0 +1,4 @@
+parsing xml file downloaded from ncbi to create .txt containing:
+
+column 1: full journal name
+column 2: standard abbreviation
